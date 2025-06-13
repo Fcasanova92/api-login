@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Controller, Post, UsePipes, ValidationPipe } from '@nestjs/common';
-import { LoginDTO } from 'src/domain/dtos/auth/login.dto';
-import { RegisterDTO } from 'src/domain/dtos/auth/register.dto';
+import { LoginDTO } from 'src/aplication/dtos/auth/login.dto';
+import { RegisterDTO } from 'src/aplication/dtos/auth/register.dto';
 
 @Controller('session')
 export class AppController {
