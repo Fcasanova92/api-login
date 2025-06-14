@@ -1,5 +1,4 @@
 import { SessionEntity } from '../entities/session.entities';
-/* eslint-disable prettier/prettier */;
 
 export interface ISessionRepositorie {
 

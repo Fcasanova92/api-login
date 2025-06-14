@@ -1,12 +1,10 @@
-import { User } from "../entities/user.entities";
-
-/* eslint-disable prettier/prettier */
+import { User } from '../entities/user.entities';
 export interface IUserRepositorie {
-  create(user: User): void;
+  create(user: User): Promise<void>;
 
-  update(user:User) : void;
+  update(user:User) : Promise<void>;
 
-  readByEmail(email: string): void;
+  readByEmail(email: string): Promise<void>;
 
-  readById(id: string): void;
+  readById(id: string): Promise<void>;
 }
