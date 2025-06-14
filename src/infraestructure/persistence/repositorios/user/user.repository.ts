@@ -7,7 +7,8 @@ import { IUserRepositorie } from "src/domain/repositories/IUserRepositorie";
 
 @Injectable();
 export class UserRepositorie implements IUserRepositorie {
-    // en el constructor tiene que estar el injectado el servicio de de la persistencia, sea typeOrm, prisma, etc.
+    // en el constructor tiene que estar el injectado el servicio de de la persistencia, sea typeOrm, prisma, etc. que va a 
+    // implementar la interfaz de la persistencia
     constructor()
     async create(user: User): Promise<void> {
         throw new Error("Method not implemented.");

@@ -2,7 +2,7 @@ import { SessionEntity } from '../entities/session.entities';
 
 export interface ISessionRepositorie {
 
-  getUserByEmail(email: string): void;
+  getUserByEmail(email: string): Promise<void>;
 
-  upDateToken(data: SessionEntity): void;
+  upDateToken(data: SessionEntity): Promise<void>;
 }
