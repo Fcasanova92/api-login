@@ -1,11 +1,13 @@
 
 import { Body, Controller, Get } from '@nestjs/common';
+import { CreateUser } from 'src/aplication/useCases/user/createUser.';
 
 @Controller('user')
 export class UserController {
-  constructor() {}
-
-
+  constructor(
+    private createUserCase: CreateUser
+  ) {}
+  
   @Get("/email")
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   getByEmail(@Body('email') email: string):any{
