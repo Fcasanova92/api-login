@@ -1,10 +1,10 @@
-/* eslint-disable prettier/prettier */
+
 import { Controller, Post, UsePipes, ValidationPipe } from '@nestjs/common';
 import { LoginDTO } from 'src/aplication/dtos/auth/login.dto';
-import { RegisterDTO } from 'src/aplication/dtos/auth/register.dto';
+import { RegisterUserDTO } from 'src/aplication/dtos/auth/register.dto';
 
 @Controller('session')
-export class AppController {
+export class SessionController {
   constructor() {}
 
   @Post("/login")
@@ -14,7 +14,7 @@ export class AppController {
   }
 
   @Post("/register")
-  register(@Body() registerDto: RegisterDTO):any{
+  register(@Body() registerDto: RegisterUserDTO):any{
         // el caso de uso para generar el registro
   }
 }

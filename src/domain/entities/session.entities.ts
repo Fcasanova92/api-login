@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 export class SessionEntity {
   constructor(
     public readonly email: string,

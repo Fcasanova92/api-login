@@ -1,13 +1,17 @@
-/* eslint-disable prettier/prettier */
+
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { IsNotEmpty, IsEmail } from 'class-validator';
-export class RegisterDTO {
+import { IsNotEmpty } from 'class-validator';
+export class RegisterUserDTO {
   @IsNotEmpty()
-  name: string;
-
-  @IsNotEmpty()
-  surname: string;
-
-  @IsEmail()
   email: string;
+  
+  @IsNotEmpty()
+  password: string;
+
+  @IsNotEmpty()
+  token: string;
+
+  @IsNotEmpty()
+  refreshToken: string;
+
 }

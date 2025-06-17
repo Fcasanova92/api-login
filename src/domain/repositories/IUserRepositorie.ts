@@ -1,4 +1,6 @@
 import { User } from '../entities/user.entities';
+
+export const IUserRepositorieToken = Symbol("IUserRepository");
 export interface IUserRepositorie {
   create(user: User): Promise<void>;
 
